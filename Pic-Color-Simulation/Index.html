@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+        <!-- <h2>Add Colors To Life</h2> -->
+        <ul class="sidenav">
+            <li><a class="active" href="#default" id="df">Default</a></li>
+            <li><a href="#red" id="rd">Red</a></li>
+            <li><a href="#green" id="gr">Green</a></li>
+            <li><a href="#teal" id="tl">Teal</a></li>
+            <li><a href="#purple" id="pr">Purple</a></li>
+            <li><a href="#golden" id="gd">Golden</a></li>
+        </ul>
+        
+        <script>
+            document.getElementById("df").addEventListener("mouseover", mouseOverDf);
+            document.getElementById("df").addEventListener("mouseout", mouseOutDf);
+            document.getElementById("rd").addEventListener("mouseover", mouseOverRd);
+            document.getElementById("rd").addEventListener("mouseout", mouseOutRd);
+            document.getElementById("gr").addEventListener("mouseover", mouseOverGr);
+            document.getElementById("gr").addEventListener("mouseout", mouseOutGr);
+            document.getElementById("tl").addEventListener("mouseover", mouseOverTl);
+            document.getElementById("tl").addEventListener("mouseout", mouseOutTl);
+            document.getElementById("pr").addEventListener("mouseover", mouseOverPr);
+            document.getElementById("pr").addEventListener("mouseout", mouseOutPr);
+            document.getElementById("gd").addEventListener("mouseover", mouseOverGd);
+            document.getElementById("gd").addEventListener("mouseout", mouseOutGd);
+
+            
+            function mouseOverDf() {
+                document.getElementById("ig").src = "Images/default.jpg";
+            }
+            
+            function mouseOutDf() {
+                document.getElementById("ig").src = "Images/default.jpg";
+            }
+            
+            function mouseOverRd() {
+                document.getElementById("ig").src = "Images/red.jpg";
+            }
+            
+            function mouseOutRd() {
+                document.getElementById("ig").src = "Images/default.jpg";
+            }
+
+            function mouseOverGr() {
+                document.getElementById("ig").src = "Images/green.jpg";
+            }
+            
+            function mouseOutGr() {
+                document.getElementById("ig").src = "Images/default.jpg";
+            }
+
+            function mouseOverTl() {
+                document.getElementById("ig").src = "Images/teal.jpg";
+            }
+            
+            function mouseOutTl() {
+                document.getElementById("ig").src = "Images/default.jpg";
+            }
+
+            function mouseOverPr() {
+                document.getElementById("ig").src = "Images/purple.jpg";
+            }
+            
+            function mouseOutPr() {
+                document.getElementById("ig").src = "Images/default.jpg";
+            }
+
+            function mouseOverGd() {
+                document.getElementById("ig").src = "Images/golden.jpg";
+            }
+            
+            function mouseOutGd() {
+                document.getElementById("ig").src = "Images/default.jpg";
+            }
+        </script>
+
+        <div class="content">
+            <img src="Images/default.jpg" class="Image" id="ig">
+        </div>
+
+</body>
+
+</html>
+
